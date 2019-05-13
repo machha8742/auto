@@ -1,4 +1,3 @@
-[‎5/‎13/‎2019 5:49 PM]  Peteti, Rakesh:  
 path_src=./folder1
 path_dst=./folder2
 date=$(date +"%m%d%y")
