@@ -1,0 +1,11 @@
+[‎5/‎13/‎2019 5:49 PM]  Peteti, Rakesh:  
+path_src=./folder1
+path_dst=./folder2
+date=$(date +"%m%d%y")
+for file_src in $path_src/*; do
+  file_dst="$path_dst/$(basename $file_src | \
+    sed "s/^\(.*\)\.\(.*\)/\1$date.\2/")"
+  echo mv "$file_src" "$file_dst"
+done 
+ 
+
